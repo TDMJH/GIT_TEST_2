@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Metadata xmlns="http://www.informatica.com/ilm/pdmds/xml/model" type="ProjectMetadata" version="10.4.1;null;12;19171">
+  <ProjectMetadata xmlns="http://www.informatica.com/ilm/pdmds/xml/model">
+    <Project xmlns="http://www.informatica.com/ilm/pdmds/xml/model" folderName="JH_PRJ_MADOR" repositoryName="az_tdmdev_repo" status="UPDATED" name="JH_PRJ_MADOR">
+      <DataSource status="NEW" name="FlatFile"/>
+      <AssociatedPolicy status="STARTED" policyName="JH_Policy"/>
+      <AssociatedRule>JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT</AssociatedRule>
+      <AssociatedRule>jh_mr_mador_organization_name</AssociatedRule>
+      <AssociatedRule>jh_mr_mador_ssn</AssociatedRule>
+      <AssociatedGenerationRule>Default Random Unique String Rule</AssociatedGenerationRule>
+      <AssociatedGenerationRule>Default Random Unique Numeric Rule</AssociatedGenerationRule>
+      <AssociatedGenerationRule>Default Sequence Numeric Rule</AssociatedGenerationRule>
+      <AssociatedGenerationRule>Default Sequence Date Rule</AssociatedGenerationRule>
+      <ChartField name="Field 1"/>
+      <ChartField name="Target Conflict Resolution" value="RENAME"/>
+      <ChartField name="Default Generation Field 2" value="Default Random Unique String Rule"/>
+      <ChartField name="Default Generation Field 4" value=""/>
+      <ChartField name="Default Unique Key Generation Field 3" value="Default Sequence Date Rule"/>
+      <ChartField name="Default Unique Key Generation Field 4" value=""/>
+      <ChartField name="Default Unique Key Generation Field 2" value="Default Random Unique String Rule"/>
+      <ChartField name="Default Generation Field 1" value="Default Random Unique Numeric Rule"/>
+      <ChartField name="Default Primary Key Generation Field 3" value="Default Sequence Date Rule"/>
+      <ChartField name="Default Primary Key Generation Field 2" value="Default Random Unique String Rule"/>
+      <ChartField name="Default Generation Field 3" value="Default Sequence Date Rule"/>
+      <ChartField name="Default Primary Key Generation Field 4" value=""/>
+      <ChartField name="Default Primary Key Generation Field 1" value="Default Sequence Numeric Rule"/>
+      <ChartField name="Default Unique Key Generation Field 1" value="Default Random Unique Numeric Rule"/>
+      <AdhocGenerationRules/>
+      <TDMParameters/>
+    </Project>
+    <Source xmlns="http://www.informatica.com/ilm/pdmds/xml/model" sourceType="UNCLASSIFIED" databaseType="Flat File" ownerName="FlatFile" dbName="FlatFile" name="lkp_inquiry_file">
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="16" nullable="true" ordinalPosition="5" precision="16" scale="0" dataType="string" businessName="First_Name_Inquiry" ownerName="FlatFile" dsName="FlatFile" sourceName="lkp_inquiry_file" name="First_Name_Inquiry"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="23" nullable="true" ordinalPosition="8" precision="23" scale="0" dataType="string" businessName="Additional_State_Pass_Back" ownerName="FlatFile" dsName="FlatFile" sourceName="lkp_inquiry_file" name="Additional_State_Pass_Back"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="20" nullable="true" ordinalPosition="4" precision="20" scale="0" dataType="string" businessName="Last_Name_Inquiry" ownerName="FlatFile" dsName="FlatFile" sourceName="lkp_inquiry_file" name="Last_Name_Inquiry"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="15" nullable="true" ordinalPosition="6" precision="15" scale="0" dataType="string" businessName="Case_Pass_Back" ownerName="FlatFile" dsName="FlatFile" sourceName="lkp_inquiry_file" name="Case_Pass_Back"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="1" nullable="true" ordinalPosition="1" precision="1" scale="0" dataType="string" businessName="Record_Type" ownerName="FlatFile" dsName="FlatFile" sourceName="lkp_inquiry_file" name="Record_Type"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="9" nullable="true" ordinalPosition="2" precision="9" scale="0" dataType="string" businessName="Inquiry_SSN" ownerName="FlatFile" dsName="FlatFile" sourceName="lkp_inquiry_file" name="Inquiry_SSN"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="5" nullable="true" ordinalPosition="7" precision="5" scale="0" dataType="string" businessName="FIPS_Code_Pass_Back" ownerName="FlatFile" dsName="FlatFile" sourceName="lkp_inquiry_file" name="FIPS_Code_Pass_Back"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="10" nullable="true" ordinalPosition="3" precision="10" scale="0" dataType="string" businessName="State_Pass_Back" ownerName="FlatFile" dsName="FlatFile" sourceName="lkp_inquiry_file" name="State_Pass_Back"/>
+      <SourceConnectionInfo name="FLATFILE_DELIMTERS" value=","/>
+      <SourceConnectionInfo name="FLATFILE_STRIPTRAILINGBLANKS" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_ROWDELIMITER" value="0"/>
+      <SourceConnectionInfo name="FLATFILE_NULL_CHARACTER" value="*"/>
+      <SourceConnectionInfo name="DBDNAME" value="FlatFile"/>
+      <SourceConnectionInfo name="FLATFILE_MULTIDELIMITERSASAND" value="YES"/>
+      <SourceConnectionInfo name="FLATFILE_NULLCHARTYPE" value="ASCII"/>
+      <SourceConnectionInfo name="FLATFILE_QUOTE_CHARACTER" value="DOUBLE"/>
+      <SourceConnectionInfo name="FLATFILE_CODEPAGE" value="MS1252"/>
+      <SourceConnectionInfo name="Decimal Separator" value="."/>
+      <SourceConnectionInfo name="FLATFILE_DELIMETED" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_LINESEQUENTIAL" value="NO"/>
+      <SourceConnectionInfo name="Add Currently Processed Flat File Name Port" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_CONSECDELIMITERSASONE" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_PADBYTES" value="1"/>
+      <SourceConnectionInfo name="FLATFILE_KEEPESCAPECHAR" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_SHIFTSENSITIVEDATA" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_REPEATABLE" value="NO"/>
+      <SourceConnectionInfo name="Datetime Format" value="A  19 mm/dd/yyyy hh24:mi:ss"/>
+      <SourceConnectionInfo name="FLATFILE_SKIPROWS" value="0"/>
+      <SourceConnectionInfo name="Thousand Separator" value="None"/>
+    </Source>
+    <Source xmlns="http://www.informatica.com/ilm/pdmds/xml/model" sourceType="UNCLASSIFIED" databaseType="Flat File" ownerName="FlatFile" dbName="FlatFile" name="vision">
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="2" nullable="true" ordinalPosition="8" precision="2" scale="0" dataType="string" businessName="State" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="State"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="10" nullable="true" ordinalPosition="1" precision="10" scale="0" dataType="string" businessName="Polno" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="Polno"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="8" nullable="true" ordinalPosition="11" precision="8" scale="0" dataType="string" businessName="Date_of_Birth" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="Date_of_Birth"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="25" nullable="true" ordinalPosition="7" precision="25" scale="0" dataType="string" businessName="City" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="City"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="9" nullable="true" ordinalPosition="9" precision="9" scale="0" dataType="string" businessName="Zip" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="Zip"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="50" nullable="true" ordinalPosition="6" precision="50" scale="0" dataType="string" businessName="Street_Address" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="Street_Address"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="10" nullable="true" ordinalPosition="2" precision="10" scale="0" dataType="string" businessName="First_Name" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="First_Name"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="9" nullable="true" ordinalPosition="5" precision="9" scale="0" dataType="string" businessName="SSN" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="SSN"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="14" nullable="true" ordinalPosition="4" precision="14" scale="0" dataType="string" businessName="Last_Name" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="Last_Name"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="1" nullable="true" ordinalPosition="3" precision="1" scale="0" dataType="string" businessName="Mid_Init" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="Mid_Init"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="22" nullable="true" ordinalPosition="10" precision="22" scale="0" dataType="string" businessName="Non_PII" ownerName="FlatFile" dsName="FlatFile" sourceName="vision" name="Non_PII"/>
+      <SourceConnectionInfo name="Datetime Format" value="A  19 mm/dd/yyyy hh24:mi:ss"/>
+      <SourceConnectionInfo name="Thousand Separator" value="None"/>
+      <SourceConnectionInfo name="FLATFILE_CODEPAGE" value="MS1252"/>
+      <SourceConnectionInfo name="Decimal Separator" value="."/>
+      <SourceConnectionInfo name="FLATFILE_DELIMTERS" value=","/>
+      <SourceConnectionInfo name="FLATFILE_ROWDELIMITER" value="0"/>
+      <SourceConnectionInfo name="FLATFILE_QUOTE_CHARACTER" value="DOUBLE"/>
+      <SourceConnectionInfo name="FLATFILE_CONSECDELIMITERSASONE" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_PADBYTES" value="1"/>
+      <SourceConnectionInfo name="FLATFILE_DELIMETED" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_LINESEQUENTIAL" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_NULLCHARTYPE" value="ASCII"/>
+      <SourceConnectionInfo name="FLATFILE_SKIPROWS" value="0"/>
+      <SourceConnectionInfo name="FLATFILE_MULTIDELIMITERSASAND" value="YES"/>
+      <SourceConnectionInfo name="FLATFILE_NULL_CHARACTER" value="*"/>
+      <SourceConnectionInfo name="DBDNAME" value="FlatFile"/>
+      <SourceConnectionInfo name="FLATFILE_STRIPTRAILINGBLANKS" value="NO"/>
+      <SourceConnectionInfo name="Add Currently Processed Flat File Name Port" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_KEEPESCAPECHAR" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_SHIFTSENSITIVEDATA" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_REPEATABLE" value="NO"/>
+    </Source>
+    <Source xmlns="http://www.informatica.com/ilm/pdmds/xml/model" sourceType="UNCLASSIFIED" databaseType="Flat File" ownerName="FlatFile" dbName="FlatFile" name="saa">
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="8" nullable="true" ordinalPosition="5" precision="8" scale="0" dataType="string" businessName="Date_of_Birth" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="Date_of_Birth"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="9" nullable="true" ordinalPosition="9" precision="9" scale="0" dataType="string" businessName="Zip" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="Zip"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="13" nullable="true" ordinalPosition="11" precision="13" scale="0" dataType="string" businessName="Non_PII" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="Non_PII"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="1" nullable="true" ordinalPosition="3" precision="1" scale="0" dataType="string" businessName="Mid_Init" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="Mid_Init"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="105" nullable="true" ordinalPosition="6" precision="105" scale="0" dataType="string" businessName="Street_Address" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="Street_Address"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="28" nullable="true" ordinalPosition="4" precision="28" scale="0" dataType="string" businessName="Last_Name" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="Last_Name"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="9" nullable="true" ordinalPosition="1" precision="9" scale="0" dataType="string" businessName="Polno" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="Polno"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="2" nullable="true" ordinalPosition="8" precision="2" scale="0" dataType="string" businessName="State" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="State"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="9" nullable="true" ordinalPosition="10" precision="9" scale="0" dataType="string" businessName="SSN" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="SSN"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="16" nullable="true" ordinalPosition="2" precision="16" scale="0" dataType="string" businessName="First_Name" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="First_Name"/>
+      <Port COMPUTED="false" keyType="NOT_A_KEY" inferredType="UNDEFINED" inferredGenerationEnabled="UNDEFINED" restricted="false" length="25" nullable="true" ordinalPosition="7" precision="25" scale="0" dataType="string" businessName="City" ownerName="FlatFile" dsName="FlatFile" sourceName="saa" name="City"/>
+      <SourceConnectionInfo name="FLATFILE_CODEPAGE" value="MS1252"/>
+      <SourceConnectionInfo name="FLATFILE_REPEATABLE" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_NULLCHARTYPE" value="ASCII"/>
+      <SourceConnectionInfo name="FLATFILE_SKIPROWS" value="0"/>
+      <SourceConnectionInfo name="FLATFILE_STRIPTRAILINGBLANKS" value="NO"/>
+      <SourceConnectionInfo name="Thousand Separator" value="None"/>
+      <SourceConnectionInfo name="FLATFILE_SHIFTSENSITIVEDATA" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_KEEPESCAPECHAR" value="NO"/>
+      <SourceConnectionInfo name="Add Currently Processed Flat File Name Port" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_DELIMTERS" value=","/>
+      <SourceConnectionInfo name="FLATFILE_QUOTE_CHARACTER" value="DOUBLE"/>
+      <SourceConnectionInfo name="FLATFILE_NULL_CHARACTER" value="*"/>
+      <SourceConnectionInfo name="FLATFILE_LINESEQUENTIAL" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_MULTIDELIMITERSASAND" value="NO"/>
+      <SourceConnectionInfo name="FLATFILE_ROWDELIMITER" value="0"/>
+      <SourceConnectionInfo name="FLATFILE_PADBYTES" value="1"/>
+      <SourceConnectionInfo name="Decimal Separator" value="."/>
+      <SourceConnectionInfo name="Datetime Format" value="A  19 mm/dd/yyyy hh24:mi:ss"/>
+      <SourceConnectionInfo name="FLATFILE_DELIMETED" value="NO"/>
+      <SourceConnectionInfo name="DBDNAME" value="FlatFile"/>
+      <SourceConnectionInfo name="FLATFILE_CONSECDELIMITERSASONE" value="NO"/>
+    </Source>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="saa" portName="First_Name" policyName="JH_Policy" ruleName="JH_MR_First_Name">
+      <RuleAssignmentParameter name="postprocess_expression" value="UPPER(Input_Column)"/>
+    </Assignment>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="saa" portName="Mid_Init" policyName="JH_Policy" ruleName="JH_MR_MIDDLE_INITIAL">
+      <RuleAssignmentParameter name="postprocess_expression" value="UPPER(Input_Column)"/>
+    </Assignment>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="saa" portName="Last_Name" policyName="JH_Policy" ruleName="JH_MR_Last_Name">
+      <RuleAssignmentParameter name="postprocess_expression" value="UPPER(Input_Column)"/>
+    </Assignment>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="saa" portName="Street_Address" policyName="JH_Policy" ruleName="JH_MR_Addr_Line1">
+      <RuleAssignmentParameter name="postprocess_expression" value="UPPER(Input_Column)"/>
+    </Assignment>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="saa" portName="SSN" policyName="JH_Policy" ruleName="JH_MR_SSN"/>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="vision" portName="First_Name" policyName="JH_Policy" ruleName="JH_MR_First_Name">
+      <RuleAssignmentParameter name="postprocess_expression" value="UPPER(Input_Column)"/>
+    </Assignment>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="vision" portName="Mid_Init" policyName="JH_Policy" ruleName="JH_MR_MIDDLE_INITIAL">
+      <RuleAssignmentParameter name="postprocess_expression" value="UPPER(Input_Column)"/>
+    </Assignment>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="vision" portName="Last_Name" policyName="JH_Policy" ruleName="JH_MR_Last_Name">
+      <RuleAssignmentParameter name="postprocess_expression" value="UPPER(Input_Column)"/>
+    </Assignment>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="vision" portName="SSN" policyName="JH_Policy" ruleName="JH_MR_SSN"/>
+    <Assignment xmlns="http://www.informatica.com/ilm/pdmds/xml/model" dsName="FlatFile" ownerName="FlatFile" sourceName="vision" portName="Street_Address" policyName="JH_Policy" ruleName="JH_MR_Addr_Line1">
+      <RuleAssignmentParameter name="postprocess_expression" value="UPPER(Input_Column)"/>
+    </Assignment>
+    <AssignmentGroup xmlns="http://www.informatica.com/ilm/pdmds/xml/model" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT">
+      <Assignment rulePortType="INPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="vision" portName="Date_of_Birth" rulePortName="IN_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT"/>
+      <Assignment rulePortType="OUTPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="vision" portName="Date_of_Birth" rulePortName="OUT_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT"/>
+    </AssignmentGroup>
+    <AssignmentGroup xmlns="http://www.informatica.com/ilm/pdmds/xml/model" policyName="-" ruleName="jh_mr_mador_organization_name">
+      <Assignment rulePortType="OUTPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="Last_Name_Inquiry" rulePortName="out_L_name" policyName="-" ruleName="jh_mr_mador_organization_name"/>
+      <Assignment rulePortType="INPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="Last_Name_Inquiry" rulePortName="L_name" policyName="-" ruleName="jh_mr_mador_organization_name"/>
+      <Assignment rulePortType="INPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="Record_Type" rulePortName="record_type" policyName="-" ruleName="jh_mr_mador_organization_name"/>
+      <Assignment rulePortType="OUTPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="First_Name_Inquiry" rulePortName="out_f_name" policyName="-" ruleName="jh_mr_mador_organization_name"/>
+      <Assignment rulePortType="INPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="State_Pass_Back" rulePortName="state_pass_back" policyName="-" ruleName="jh_mr_mador_organization_name"/>
+      <Assignment rulePortType="INPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="First_Name_Inquiry" rulePortName="F_name" policyName="-" ruleName="jh_mr_mador_organization_name"/>
+    </AssignmentGroup>
+    <AssignmentGroup xmlns="http://www.informatica.com/ilm/pdmds/xml/model" policyName="-" ruleName="jh_mr_mador_ssn">
+      <Assignment rulePortType="OUTPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="Inquiry_SSN" rulePortName="out_SSN" policyName="-" ruleName="jh_mr_mador_ssn"/>
+      <Assignment rulePortType="INPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="Inquiry_SSN" rulePortName="inquiry_SSN" policyName="-" ruleName="jh_mr_mador_ssn"/>
+      <Assignment rulePortType="INPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="lkp_inquiry_file" portName="Record_Type" rulePortName="record_type" policyName="-" ruleName="jh_mr_mador_ssn"/>
+    </AssignmentGroup>
+    <AssignmentGroup xmlns="http://www.informatica.com/ilm/pdmds/xml/model" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT">
+      <Assignment rulePortType="OUTPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="saa" portName="Date_of_Birth" rulePortName="OUT_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT"/>
+      <Assignment rulePortType="INPUT" dsName="FlatFile" ownerName="FlatFile" sourceName="saa" portName="Date_of_Birth" rulePortName="IN_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT"/>
+    </AssignmentGroup>
+    <Plan xmlns="http://www.informatica.com/ilm/pdmds/xml/model" active="false" name="JH_PLN_MADOR_lkp_inquiry_file">
+      <PlanComponent refObjectName="jh_mr_mador_ssn" refObjectType="com.informatica.ilm.pdmds.core.model.impl.RuleImpl" name="jh_mr_mador_ssn">
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="Inquiry_SSN" rulePortName="inquiry_SSN" policyName="-" ruleName="jh_mr_mador_ssn" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="Record_Type" rulePortName="record_type" policyName="-" ruleName="jh_mr_mador_ssn" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="Inquiry_SSN" rulePortName="out_SSN" policyName="-" ruleName="jh_mr_mador_ssn" operator="execute" name="execute" value="on"/>
+      </PlanComponent>
+      <PlanComponent refObjectName="jh_mr_mador_organization_name" refObjectType="com.informatica.ilm.pdmds.core.model.impl.RuleImpl" name="jh_mr_mador_organization_name">
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="Record_Type" rulePortName="record_type" policyName="-" ruleName="jh_mr_mador_organization_name" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="State_Pass_Back" rulePortName="state_pass_back" policyName="-" ruleName="jh_mr_mador_organization_name" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="First_Name_Inquiry" rulePortName="out_f_name" policyName="-" ruleName="jh_mr_mador_organization_name" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="First_Name_Inquiry" rulePortName="F_name" policyName="-" ruleName="jh_mr_mador_organization_name" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="Last_Name_Inquiry" rulePortName="out_L_name" policyName="-" ruleName="jh_mr_mador_organization_name" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="lkp_inquiry_file" portName="Last_Name_Inquiry" rulePortName="L_name" policyName="-" ruleName="jh_mr_mador_organization_name" operator="execute" name="execute" value="on"/>
+      </PlanComponent>
+      <PlanProperty value="Yes" name="ROLLBACK_TRANSACTION_ON_ERROR"/>
+      <PlanProperty value="No" name="GENERATE_MAPPINGS_WITH_SOURCE_DATATYPE"/>
+      <PlanProperty value="No" name="DISABLE_INDEXES"/>
+      <PlanProperty value="Flat File" name="TARGET_CONN_TYPE"/>
+      <PlanProperty value="Relational" name="STORAGE_CONN_TYPE"/>
+      <PlanProperty value="No" name="PC_SORTER"/>
+      <PlanProperty value="MM/DD/YYYY HH24:MI:SS.US" name="DATE_TIME_FORMAT_STRING"/>
+      <PlanProperty value="No" name="SHARED_STORAGE_TABLE"/>
+      <PlanProperty value="No" name="PRE_85_TIMESTAMP_COMPATIBLITY"/>
+      <PlanProperty value="By Runs" name="SAVE_WORKFLOW_LOGS_BY"/>
+      <PlanProperty value="$PMSourceFileDir\" name="SOURCE_CONN_NAME"/>
+      <PlanProperty value="TDM_CONNECTION" name="STAGING_CONN_NAME"/>
+      <PlanProperty value="No" name="USE_SOURCE_AS_TARGET"/>
+      <PlanProperty value="Update" name="UPDATE_AS"/>
+      <PlanProperty value="1" name="MAX_TABLES_PER_MAPPING"/>
+      <PlanProperty value="Yes" name="ENABLE_SPECIAL_CHARACTERS_IN_METADATA"/>
+      <PlanProperty value="None" name="ERROR_LOG_TYPE"/>
+      <PlanProperty value="JH_PRJ_MADOR" name="FOLDER_NAME"/>
+      <PlanProperty value="1" name="MAX_PARALLEL_SESSIONS"/>
+      <PlanProperty value="Relational" name="SOURCE_CONN_TYPE"/>
+      <PlanProperty value="Fail task and continue workflow" name="RECOVER_STRATEGY"/>
+      <PlanProperty value="No" name="TRUNCATE_TRGT_TABLES"/>
+      <PlanProperty value="No" name="INPLACE_BATCH_UPDATE"/>
+      <PlanProperty value="Yes" name="STRICT_MAJOR_EDGE_BEHAVIOR"/>
+      <PlanProperty value="Target" name="COMMIT_TYPE"/>
+      <PlanProperty value="No" name="ENABLE_HA_RECOVERY"/>
+      <PlanProperty value="" name="STAGING_CONN_INFO"/>
+      <PlanProperty value="1" name="MAXIMUM_PARTIAL_SESSION_LOG_FILES"/>
+      <PlanProperty value="EXISTS" name="SQL_JOIN_TYPE"/>
+      <PlanProperty value="" name="STORAGE_CONN_INFO"/>
+      <PlanProperty value="Insert" name="TREAT_SOURCE_ROW_AS"/>
+      <PlanProperty value="$PMSourceFileDir\" name="SOURCE_CONN_FILE_PATH"/>
+      <PlanProperty value="0" name="SESSION_LOGS_FILE_MAX_TIME_PERIOD"/>
+      <PlanProperty value="No" name="WRITE_BACKWARD_COMPATIBLE_WORKFLOW_LOG"/>
+      <PlanProperty value="tdmdev_96_repo" name="REPO_NAME"/>
+      <PlanProperty value="No" name="USE_ROWID_IN_SOURCES"/>
+      <PlanProperty value="No" name="ENABLE_HIGH_PRECISION"/>
+      <PlanProperty value="10000" name="COMMIT_INTERVAL"/>
+      <PlanProperty value="TDM_CONNECTION" name="STORAGE_CONN_NAME"/>
+      <PlanProperty value="No" name="MANUAL_DISABLE_CONSTRAINT"/>
+      <PlanProperty value="0" name="STOP_ON_ERROR"/>
+      <PlanProperty value="0" name="SESSION_LOGS_FILE_MAX_SIZE"/>
+      <PlanProperty value="No" name="SUSPEND_ON_ERROR"/>
+      <PlanProperty value="No" name="WRITE_BACKWARD_COMPATIBLE_SESSION_LOG_FILE"/>
+      <PlanProperty value="No" name="USE_SUBSET_CRITERIA_VALUE_AS_VARIABLE"/>
+      <PlanProperty value="en_US" name="LOCALE_CODE"/>
+      <PlanProperty value="Normal" name="TARGET_LOAD_TYPE"/>
+      <PlanProperty value="Session Runs" name="SAVE_SESSION_LOG_BY"/>
+      <PlanProperty value="$PMTargetFileDir\" name="TARGET_CONN_FILE_PATH"/>
+      <PlanProperty value="$PMBadFileDir\" name="ERROR_LOG_FILE_DIRECTORY"/>
+      <PlanProperty value="0" name="SAVE_SESSION_LOG_FOR_THESE_RUNS"/>
+      <PlanProperty value="Relational" name="STAGING_CONN_TYPE"/>
+      <PlanProperty value="0" name="SAVE_WORKFLOW_LOGS_FOR_THESE_RUNS"/>
+      <PlanProperty value="No" name="HADOOP_PLAN"/>
+      <PlanProperty value="No" name="OPTIMIZE_ENTITY_RELATIONS"/>
+      <PlanOverriddenSource sourceName="lkp_inquiry_file" dataSourceName="FlatFile">
+        <PlanOverriddenSourceParam name="ENABLE_PARTITIONING" value="No"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_FILE_NAME" value="lkp_inquiry_file_masked.dat"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONNECTIONVARIABLE_NAME" value="$PMSourceFileDir\"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_TYPE" value="Flat File"/>
+        <PlanOverriddenSourceParam name="TARGET_LOAD_TYPE" value="Normal"/>
+        <PlanOverriddenSourceParam name="TARGET_CONNECTIONVARIABLE_NAME" value="$PMTargetFileDir\"/>
+        <PlanOverriddenSourceParam name="DATE_TIME_FORMAT_STRING" value="MM/DD/YYYY HH24:MI:SS.US"/>
+        <PlanOverriddenSourceParam name="TRUNCATE_TRGT_TABLES" value="No"/>
+        <PlanOverriddenSourceParam name="FF_IS_FIXEDWIDTH" value="Yes"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_NAME" value="$PMTargetFileDir\"/>
+        <PlanOverriddenSourceParam name="ROW_SEPARATOR" value="null"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONN_FILE_PATH" value="$PMSourceFileDir\"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONN_FILE_NAME" value="lkp_inquiry_file.dat"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_FILE_PATH" value="$PMTargetFileDir\"/>
+        <PlanOverriddenSourceParam name="TARGET_FLAT_FILE_CODEPAGE" value="MS Windows Latin 1 (ANSI), superset of Latin1"/>
+        <PlanOverriddenSourceParam name="FF_OPTIONAL_QUOTES" value="DOUBLE"/>
+        <PlanOverriddenSourceParam name="FLAT_FILE_HEADER_OPTIONS" value="No"/>
+        <PlanOverriddenSourceParam name="IMPORTED_SOURCE_OWNER_NAME" value="FlatFile"/>
+      </PlanOverriddenSource>
+    </Plan>
+    <Plan xmlns="http://www.informatica.com/ilm/pdmds/xml/model" active="false" name="JH_PLN_MADOR_vision">
+      <PlanComponent refObjectName="JH_Policy" refObjectType="com.informatica.ilm.pdmds.core.model.impl.PolicyImpl" name="JH_Policy">
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="SSN" policyName="JH_Policy" ruleName="JH_MR_SSN" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Mid_Init" policyName="JH_Policy" ruleName="JH_MR_MIDDLE_INITIAL" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Last_Name" policyName="JH_Policy" ruleName="JH_MR_Last_Name" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Street_Address" policyName="JH_Policy" ruleName="JH_MR_Addr_Line1" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="First_Name" policyName="JH_Policy" ruleName="JH_MR_First_Name" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Mid_Init" policyName="JH_Policy" ruleName="JH_MR_MIDDLE_INITIAL" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Street_Address" policyName="JH_Policy" ruleName="JH_MR_Addr_Line1" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Last_Name" policyName="JH_Policy" ruleName="JH_MR_Last_Name" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="SSN" policyName="JH_Policy" ruleName="JH_MR_SSN" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="First_Name" policyName="JH_Policy" ruleName="JH_MR_First_Name" operator="execute" name="execute" value="on"/>
+      </PlanComponent>
+      <PlanComponent refObjectName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" refObjectType="com.informatica.ilm.pdmds.core.model.impl.RuleImpl" name="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT">
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Date_of_Birth" rulePortName="IN_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Date_of_Birth" rulePortName="OUT_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Date_of_Birth" rulePortName="OUT_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Date_of_Birth" rulePortName="IN_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" operator="execute" name="execute" value="off"/>
+      </PlanComponent>
+      <PlanProperty value="0" name="SESSION_LOGS_FILE_MAX_SIZE"/>
+      <PlanProperty value="No" name="SUSPEND_ON_ERROR"/>
+      <PlanProperty value="Update" name="UPDATE_AS"/>
+      <PlanProperty value="No" name="WRITE_BACKWARD_COMPATIBLE_SESSION_LOG_FILE"/>
+      <PlanProperty value="en_US" name="LOCALE_CODE"/>
+      <PlanProperty value="Normal" name="TARGET_LOAD_TYPE"/>
+      <PlanProperty value="10" name="MAX_TABLES_PER_MAPPING"/>
+      <PlanProperty value="JH_PRJ_MADOR" name="FOLDER_NAME"/>
+      <PlanProperty value="$PMBadFileDir\" name="ERROR_LOG_FILE_DIRECTORY"/>
+      <PlanProperty value="Fail task and continue workflow" name="RECOVER_STRATEGY"/>
+      <PlanProperty value="Relational" name="STAGING_CONN_TYPE"/>
+      <PlanProperty value="No" name="OPTIMIZE_ENTITY_RELATIONS"/>
+      <PlanProperty value="Target" name="COMMIT_TYPE"/>
+      <PlanProperty value="No" name="ENABLE_HA_RECOVERY"/>
+      <PlanProperty value="No" name="HADOOP_PLAN"/>
+      <PlanProperty value="1" name="MAXIMUM_PARTIAL_SESSION_LOG_FILES"/>
+      <PlanProperty value="EXISTS" name="SQL_JOIN_TYPE"/>
+      <PlanProperty value="No" name="WRITE_BACKWARD_COMPATIBLE_WORKFLOW_LOG"/>
+      <PlanProperty value="Yes" name="ROLLBACK_TRANSACTION_ON_ERROR"/>
+      <PlanProperty value="No" name="GENERATE_MAPPINGS_WITH_SOURCE_DATATYPE"/>
+      <PlanProperty value="Relational" name="STORAGE_CONN_TYPE"/>
+      <PlanProperty value="No" name="ENABLE_HIGH_PRECISION"/>
+      <PlanProperty value="MM/DD/YYYY HH24:MI:SS.US" name="DATE_TIME_FORMAT_STRING"/>
+      <PlanProperty value="TDM_CONNECTION" name="STORAGE_CONN_NAME"/>
+      <PlanProperty value="0" name="STOP_ON_ERROR"/>
+      <PlanProperty value="No" name="USE_SUBSET_CRITERIA_VALUE_AS_VARIABLE"/>
+      <PlanProperty value="By Runs" name="SAVE_WORKFLOW_LOGS_BY"/>
+      <PlanProperty value="$PMSourceFileDir\" name="SOURCE_CONN_NAME"/>
+      <PlanProperty value="TDM_CONNECTION" name="STAGING_CONN_NAME"/>
+      <PlanProperty value="No" name="USE_SOURCE_AS_TARGET"/>
+      <PlanProperty value="No" name="ENABLE_SPECIAL_CHARACTERS_IN_METADATA"/>
+      <PlanProperty value="Session Runs" name="SAVE_SESSION_LOG_BY"/>
+      <PlanProperty value="None" name="ERROR_LOG_TYPE"/>
+      <PlanProperty value="$PMTargetFileDir\" name="TARGET_CONN_FILE_PATH"/>
+      <PlanProperty value="No" name="TRUNCATE_TRGT_TABLES"/>
+      <PlanProperty value="No" name="INPLACE_BATCH_UPDATE"/>
+      <PlanProperty value="0" name="SAVE_SESSION_LOG_FOR_THESE_RUNS"/>
+      <PlanProperty value="Yes" name="STRICT_MAJOR_EDGE_BEHAVIOR"/>
+      <PlanProperty value="0" name="SAVE_WORKFLOW_LOGS_FOR_THESE_RUNS"/>
+      <PlanProperty value="Relational" name="SOURCE_CONN_TYPE"/>
+      <PlanProperty value="" name="STAGING_CONN_INFO"/>
+      <PlanProperty value="" name="STORAGE_CONN_INFO"/>
+      <PlanProperty value="Insert" name="TREAT_SOURCE_ROW_AS"/>
+      <PlanProperty value="$PMSourceFileDir\" name="SOURCE_CONN_FILE_PATH"/>
+      <PlanProperty value="0" name="SESSION_LOGS_FILE_MAX_TIME_PERIOD"/>
+      <PlanProperty value="FlatFile" name="TARGET_CONN_TYPE"/>
+      <PlanProperty value="No" name="DISABLE_INDEXES"/>
+      <PlanProperty value="No" name="PC_SORTER"/>
+      <PlanProperty value="tdmdev_96_repo" name="REPO_NAME"/>
+      <PlanProperty value="No" name="USE_ROWID_IN_SOURCES"/>
+      <PlanProperty value="10000" name="COMMIT_INTERVAL"/>
+      <PlanProperty value="No" name="SHARED_STORAGE_TABLE"/>
+      <PlanProperty value="No" name="PRE_85_TIMESTAMP_COMPATIBLITY"/>
+      <PlanProperty value="No" name="MANUAL_DISABLE_CONSTRAINT"/>
+      <PlanOverriddenSource sourceName="vision" dataSourceName="FlatFile">
+        <PlanOverriddenSourceParam name="ENABLE_PARTITIONING" value="No"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_FILE_NAME" value="vision_masked.txt"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_FILE_PATH" value="$PMTargetFileDir\"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONNECTIONVARIABLE_NAME" value="$PMSourceFileDir\"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_TYPE" value="FlatFile"/>
+        <PlanOverriddenSourceParam name="TARGET_LOAD_TYPE" value="Normal"/>
+        <PlanOverriddenSourceParam name="TARGET_CONNECTIONVARIABLE_NAME" value="$PMTargetFileDir\"/>
+        <PlanOverriddenSourceParam name="DATE_TIME_FORMAT_STRING" value="MM/DD/YYYY HH24:MI:SS.US"/>
+        <PlanOverriddenSourceParam name="FF_IS_FIXEDWIDTH" value="Yes"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONN_FILE_PATH" value="$PMSourceFileDir\"/>
+        <PlanOverriddenSourceParam name="ROW_SEPARATOR" value="1"/>
+        <PlanOverriddenSourceParam name="TARGET_FLAT_FILE_CODEPAGE" value="MS Windows Latin 1 (ANSI), superset of Latin1"/>
+        <PlanOverriddenSourceParam name="FF_OPTIONAL_QUOTES" value="DOUBLE"/>
+        <PlanOverriddenSourceParam name="FLAT_FILE_HEADER_OPTIONS" value="No"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONN_FILE_NAME" value="vision.txt"/>
+        <PlanOverriddenSourceParam name="TRUNCATE_TRGT_TABLES" value="No"/>
+        <PlanOverriddenSourceParam name="IMPORTED_SOURCE_OWNER_NAME" value="FlatFile"/>
+      </PlanOverriddenSource>
+    </Plan>
+    <Plan xmlns="http://www.informatica.com/ilm/pdmds/xml/model" active="false" name="JH_PLN_MADOR_saa">
+      <PlanComponent refObjectName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" refObjectType="com.informatica.ilm.pdmds.core.model.impl.RuleImpl" name="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT">
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Date_of_Birth" rulePortName="OUT_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Date_of_Birth" rulePortName="IN_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Date_of_Birth" rulePortName="IN_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Date_of_Birth" rulePortName="OUT_DOB" policyName="-" ruleName="JH_MR_DOB_CHAR_YYYYMMDD_OR_MMDDYYYY_FORMAT" operator="execute" name="execute" value="off"/>
+      </PlanComponent>
+      <PlanComponent refObjectName="JH_Policy" refObjectType="com.informatica.ilm.pdmds.core.model.impl.PolicyImpl" name="JH_Policy">
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Street_Address" policyName="JH_Policy" ruleName="JH_MR_Addr_Line1" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Last_Name" policyName="JH_Policy" ruleName="JH_MR_Last_Name" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="SSN" policyName="JH_Policy" ruleName="JH_MR_SSN" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Mid_Init" policyName="JH_Policy" ruleName="JH_MR_MIDDLE_INITIAL" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="Last_Name" policyName="JH_Policy" ruleName="JH_MR_Last_Name" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="First_Name" policyName="JH_Policy" ruleName="JH_MR_First_Name" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="SSN" policyName="JH_Policy" ruleName="JH_MR_SSN" operator="execute" name="execute" value="off"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Mid_Init" policyName="JH_Policy" ruleName="JH_MR_MIDDLE_INITIAL" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="saa" portName="Street_Address" policyName="JH_Policy" ruleName="JH_MR_Addr_Line1" operator="execute" name="execute" value="on"/>
+        <PlanComponentParameter dsName="FlatFile" sourceName="vision" portName="First_Name" policyName="JH_Policy" ruleName="JH_MR_First_Name" operator="execute" name="execute" value="off"/>
+      </PlanComponent>
+      <PlanProperty value="MM/DD/YYYY HH24:MI:SS.US" name="DATE_TIME_FORMAT_STRING"/>
+      <PlanProperty value="No" name="ENABLE_SPECIAL_CHARACTERS_IN_METADATA"/>
+      <PlanProperty value="No" name="PC_SORTER"/>
+      <PlanProperty value="No" name="USE_SOURCE_AS_TARGET"/>
+      <PlanProperty value="" name="STAGING_CONN_INFO"/>
+      <PlanProperty value="$PMSourceFileDir\" name="SOURCE_CONN_NAME"/>
+      <PlanProperty value="Relational" name="STORAGE_CONN_TYPE"/>
+      <PlanProperty value="0" name="SAVE_WORKFLOW_LOGS_FOR_THESE_RUNS"/>
+      <PlanProperty value="FlatFile" name="TARGET_CONN_TYPE"/>
+      <PlanProperty value="No" name="DISABLE_INDEXES"/>
+      <PlanProperty value="None" name="ERROR_LOG_TYPE"/>
+      <PlanProperty value="No" name="INPLACE_BATCH_UPDATE"/>
+      <PlanProperty value="TDM_CONNECTION" name="STAGING_CONN_NAME"/>
+      <PlanProperty value="No" name="TRUNCATE_TRGT_TABLES"/>
+      <PlanProperty value="10000" name="COMMIT_INTERVAL"/>
+      <PlanProperty value="Yes" name="STRICT_MAJOR_EDGE_BEHAVIOR"/>
+      <PlanProperty value="$PMSourceFileDir\" name="SOURCE_CONN_FILE_PATH"/>
+      <PlanProperty value="Relational" name="SOURCE_CONN_TYPE"/>
+      <PlanProperty value="No" name="SHARED_STORAGE_TABLE"/>
+      <PlanProperty value="" name="STORAGE_CONN_INFO"/>
+      <PlanProperty value="Fail task and continue workflow" name="RECOVER_STRATEGY"/>
+      <PlanProperty value="No" name="PRE_85_TIMESTAMP_COMPATIBLITY"/>
+      <PlanProperty value="By Runs" name="SAVE_WORKFLOW_LOGS_BY"/>
+      <PlanProperty value="0" name="SESSION_LOGS_FILE_MAX_TIME_PERIOD"/>
+      <PlanProperty value="Insert" name="TREAT_SOURCE_ROW_AS"/>
+      <PlanProperty value="No" name="USE_ROWID_IN_SOURCES"/>
+      <PlanProperty value="JH_PRJ_MADOR" name="FOLDER_NAME"/>
+      <PlanProperty value="tdmdev_96_repo" name="REPO_NAME"/>
+      <PlanProperty value="No" name="MANUAL_DISABLE_CONSTRAINT"/>
+      <PlanProperty value="0" name="SESSION_LOGS_FILE_MAX_SIZE"/>
+      <PlanProperty value="No" name="SUSPEND_ON_ERROR"/>
+      <PlanProperty value="Target" name="COMMIT_TYPE"/>
+      <PlanProperty value="No" name="ENABLE_HIGH_PRECISION"/>
+      <PlanProperty value="No" name="OPTIMIZE_ENTITY_RELATIONS"/>
+      <PlanProperty value="Update" name="UPDATE_AS"/>
+      <PlanProperty value="en_US" name="LOCALE_CODE"/>
+      <PlanProperty value="No" name="ENABLE_HA_RECOVERY"/>
+      <PlanProperty value="$PMBadFileDir\" name="ERROR_LOG_FILE_DIRECTORY"/>
+      <PlanProperty value="EXISTS" name="SQL_JOIN_TYPE"/>
+      <PlanProperty value="Normal" name="TARGET_LOAD_TYPE"/>
+      <PlanProperty value="10" name="MAX_TABLES_PER_MAPPING"/>
+      <PlanProperty value="0" name="SAVE_SESSION_LOG_FOR_THESE_RUNS"/>
+      <PlanProperty value="No" name="WRITE_BACKWARD_COMPATIBLE_WORKFLOW_LOG"/>
+      <PlanProperty value="No" name="HADOOP_PLAN"/>
+      <PlanProperty value="No" name="GENERATE_MAPPINGS_WITH_SOURCE_DATATYPE"/>
+      <PlanProperty value="Yes" name="ROLLBACK_TRANSACTION_ON_ERROR"/>
+      <PlanProperty value="1" name="MAXIMUM_PARTIAL_SESSION_LOG_FILES"/>
+      <PlanProperty value="$PMTargetFileDir\" name="TARGET_CONN_FILE_PATH"/>
+      <PlanProperty value="Relational" name="STAGING_CONN_TYPE"/>
+      <PlanProperty value="No" name="WRITE_BACKWARD_COMPATIBLE_SESSION_LOG_FILE"/>
+      <PlanProperty value="TDM_CONNECTION" name="STORAGE_CONN_NAME"/>
+      <PlanProperty value="0" name="STOP_ON_ERROR"/>
+      <PlanProperty value="Session Runs" name="SAVE_SESSION_LOG_BY"/>
+      <PlanProperty value="No" name="USE_SUBSET_CRITERIA_VALUE_AS_VARIABLE"/>
+      <PlanOverriddenSource sourceName="saa" dataSourceName="FlatFile">
+        <PlanOverriddenSourceParam name="DATE_TIME_FORMAT_STRING" value="MM/DD/YYYY HH24:MI:SS.US"/>
+        <PlanOverriddenSourceParam name="FF_IS_FIXEDWIDTH" value="Yes"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONN_FILE_PATH" value="$PMSourceFileDir\"/>
+        <PlanOverriddenSourceParam name="ROW_SEPARATOR" value="1"/>
+        <PlanOverriddenSourceParam name="TARGET_FLAT_FILE_CODEPAGE" value="MS Windows Latin 1 (ANSI), superset of Latin1"/>
+        <PlanOverriddenSourceParam name="FF_OPTIONAL_QUOTES" value="DOUBLE"/>
+        <PlanOverriddenSourceParam name="FLAT_FILE_HEADER_OPTIONS" value="No"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONN_FILE_NAME" value="saa.txt"/>
+        <PlanOverriddenSourceParam name="TRUNCATE_TRGT_TABLES" value="No"/>
+        <PlanOverriddenSourceParam name="ENABLE_PARTITIONING" value="No"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_FILE_NAME" value="saa_masked.txt"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_FILE_PATH" value="$PMTargetFileDir\"/>
+        <PlanOverriddenSourceParam name="SOURCE_CONNECTIONVARIABLE_NAME" value="$PMSourceFileDir\"/>
+        <PlanOverriddenSourceParam name="TARGET_CONN_TYPE" value="FlatFile"/>
+        <PlanOverriddenSourceParam name="TARGET_LOAD_TYPE" value="Normal"/>
+        <PlanOverriddenSourceParam name="TARGET_CONNECTIONVARIABLE_NAME" value="$PMTargetFileDir\"/>
+        <PlanOverriddenSourceParam name="IMPORTED_SOURCE_OWNER_NAME" value="FlatFile"/>
+      </PlanOverriddenSource>
+    </Plan>
+  </ProjectMetadata>
+</Metadata>
